@@ -57,7 +57,8 @@ app.get('/commande/:prenom/:boisson', (req, res) => {
   res.send(`Bonjour ${prenom}, votre commande de ${boisson} est en préparation 🍹`);
 });
 
-// Lancement du serveur
-app.listen(3000, () => {
-  console.log('Le stand est ouvert à http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Le stand est ouvert sur le port ${PORT}`);
 });
+
