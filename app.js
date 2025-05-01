@@ -24,7 +24,7 @@ app.get('/boisson/:nom', (req, res) => {
   res.send(`Tu as choisi la boisson : ${nom} 🥤`);
 });
 
-// Formulaire de commande → redirection vers la commande personnalisée (temporaire test pour le moment)
+// Formulaire de commande
 app.get('/', (req, res) => {
   res.send(`
     <h2>Commande une boisson</h2>
