@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stand de boissons 🍹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stand">
+    <div class="toit">
+      <div class="bande"></div>
+      <div class="bande"></div>
+      <div class="bande"></div>
+      <div class="bande"></div>
+      <div class="bande"></div>
+    </div>
+    <div class="contenu">
+      <h2>Commande une boisson 🍹</h2>
+      <form action="/commande" method="GET">
+        <label for="prenom">Ton prénom :</label>
+        <input type="text" id="prenom" name="prenom" required placeholder="Ex: Lina" title="Entre ton prénom">
+
+        <label for="boisson">Choisis ta boisson :</label>
+        <select id="boisson" name="boisson" title="Sélectionne une boisson" required>
+          <option value="">-- Choisis une boisson --</option>
+          <option value="limonade">Limonade</option>
+          <option value="eau">Eau</option>
+          <option value="jus">Jus</option>
+          <option value="thé">Thé</option>
+        </select>
+
+        <button type="submit">Commander</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
